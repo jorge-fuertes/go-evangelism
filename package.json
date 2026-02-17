@@ -1,0 +1,30 @@
+{
+  "name": "go-evangelism",
+  "version": "1.0.0",
+  "description": "Presentación sobre Go: Historia, características, fortalezas y casos de uso",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "reveal-md slides.md --port 8080 --theme moon --css assets/css/custom.css",
+    "dev": "reveal-md slides.md --port 8080 --theme moon --css assets/css/custom.css --watch",
+    "build": "reveal-md slides.md --static ./_site && npm run copy-assets",
+    "copy-assets": "mkdir -p _site/assets/css && mkdir -p _site/assets/images && cp -r assets/css/* _site/assets/css/ && cp -r assets/images/* _site/assets/images/ || true",
+    "server": "node server-dev.js"
+  },
+  "keywords": [
+    "Go",
+    "Golang",
+    "Presentation",
+    "RevealJS",
+    "Backend",
+    "Microservices"
+  ],
+  "author": "Go Evangelist",
+  "license": "MIT",
+  "devDependencies": {
+    "reveal-md": "^5.2.0",
+    "reveal.js": "^4.5.0",
+    "ws": "^8.14.0"
+  },
+  "dependencies": {}
+}
