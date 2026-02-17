@@ -2,17 +2,6 @@
 
 Presentación sobre el lenguaje Go para desarrolladores, cubriendo historia, características, fortalezas y casos de uso en backend y servicios en la nube.
 
-## Contenido
-
-1. **Introducción e Historia de Go** - Creación por Google, filosofía y hitos
-2. **Características Fundamentales** - Compilación, tipado, concurrencia, gestión de memoria
-3. **Fortalezas de Go** - Rendimiento, velocidad, binarios, tooling
-4. **Go vs Lenguajes Interpretados** - Comparación técnica con Python/JavaScript
-5. **Go vs Java** - Ventajas competitivas vs Java
-6. **Go para Backend** - APIs, manejo de conexiones, frameworks
-7. **Microservicios y Cloud** - Diseño cloud-native, containerización
-8. **Conclusiones** - Recursos y llamadas a acción
-
 ## Inicio Rápido
 
 ### Requisitos
@@ -69,30 +58,3 @@ npm run build
 ```
 
 Los archivos estáticos se generarán en `_site/`
-
-## Temas y Personalización
-
-- **Tema**: Dark Molokai con branding de Gopher
-- **Logo**: Gopher con gafas integrado en la plantilla
-- **Estilos**: CSS personalizado en `assets/css/`
-
-## Estructura del Proyecto
-
-```plain
-.
-├── slides.md           # Contenido principal
-├── package.json        # Dependencias
-├── slides/            # Recursos de slides
-├── assets/
-│   ├── css/          # Estilos personalizados
-│   ├── images/       # Imágenes y logos
-│   └── code/         # Ejemplos de código
-└── README.md         # Este archivo
-```
-
-## Scripts Disponibles
-
-- `npm run dev` - Servidor de desarrollo
-- `npm start` - Iniciar presentación estática
-- `npm run build` - Compilar para producción
-- `npm run server` - Servidor en puerto 3000
