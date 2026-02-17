@@ -1,8 +1,8 @@
-# 🐹 Go Evangelism - Presentación RevealJS
+# Go Evangelism - Presentación RevealJS
 
 Presentación sobre el lenguaje Go para desarrolladores, cubriendo historia, características, fortalezas y casos de uso en backend y servicios en la nube.
 
-## 📋 Contenido
+## Contenido
 
 1. **Introducción e Historia de Go** - Creación por Google, filosofía y hitos
 2. **Características Fundamentales** - Compilación, tipado, concurrencia, gestión de memoria
@@ -13,7 +13,7 @@ Presentación sobre el lenguaje Go para desarrolladores, cubriendo historia, car
 7. **Microservicios y Cloud** - Diseño cloud-native, containerización
 8. **Conclusiones** - Recursos y llamadas a acción
 
-## 🚀 Inicio Rápido
+## Inicio Rápido
 
 ### Requisitos
 
@@ -70,15 +70,15 @@ npm run build
 
 Los archivos estáticos se generarán en `_site/`
 
-## 🎨 Temas y Personalización
+## Temas y Personalización
 
 - **Tema**: Dark Molokai con branding de Gopher
 - **Logo**: Gopher con gafas integrado en la plantilla
 - **Estilos**: CSS personalizado en `assets/css/`
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
-```
+```plain
 .
 ├── slides.md           # Contenido principal
 ├── package.json        # Dependencias
@@ -90,13 +90,9 @@ Los archivos estáticos se generarán en `_site/`
 └── README.md         # Este archivo
 ```
 
-## 🛠️ Scripts Disponibles
+## Scripts Disponibles
 
 - `npm run dev` - Servidor de desarrollo
 - `npm start` - Iniciar presentación estática
 - `npm run build` - Compilar para producción
 - `npm run server` - Servidor en puerto 3000
-
-## 📝 Licencia
-
-MIT
