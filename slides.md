@@ -1,5 +1,7 @@
 # It's time to Go
+
 #### Jorge Fuertes Alfranca
+
 <p style="font-size: .6em">
     <a href="mailto:jorge1.fuertes@volkswagen-groupservices.com">jorge1.fuertes@volkswagen-groupservices.com</a>
 </p>
@@ -22,6 +24,7 @@
 ---
 
 ## Sección 1
+
 # Historia de Go
 
 ---
@@ -40,18 +43,19 @@ Creado por **Google** en 2009
 ---
 
 ## ¿Por qué era necesario?
+
 #### Estado del arte:
 
-<div style="font-size: 0.65em;">
+<div class="lang" style="font-size: 0.65em;">
 
-| Lenguaje   | Debilidades                                                                                 |
-| ---------- | ------------------------------------------------------------------------------------------- |
-| **C++**    | Rápido, pero compilación lenta y alta complejidad.                                          |
-| **C#**     | Lenguaje complicado, atado a un proveedor.                                                  |
-| **Java**   | Seguro, pero lento, pesado, y con un ecosistema altamente complejo.                         |
-| **Python** | Fácil, pero débilmente tipado.                                                              |
-| **PHP**    | Fácil pero inseguro, tipado blando y se presta a hacer código sucio como el spaghetti code. |
-| **Ruby**   | Lento, ecosistema complejo, tipado blando. Complejo de testear.                             |
+|                                           | Lenguaje   | Debilidades                                                                                 |
+| ----------------------------------------- | ---------- | ------------------------------------------------------------------------------------------- |
+| ![C++](assets/images/langs/cpp.png)       | **C++**    | Rápido, pero compilación lenta y alta complejidad.                                          |
+| ![C#](assets/images/langs/c-sharp.png)    | **C#**     | Lenguaje complicado, atado a un proveedor.                                                  |
+| ![Java](assets/images/langs/java.png)     | **Java**   | Seguro, pero lento, pesado, y con un ecosistema altamente complejo.                         |
+| ![Python](assets/images/langs/python.png) | **Python** | Fácil, pero débilmente tipado.                                                              |
+| ![PHP](assets/images/langs/php.png)       | **PHP**    | Fácil pero inseguro, tipado blando y se presta a hacer código sucio como el spaghetti code. |
+| ![Ruby](assets/images/langs/ruby.png)     | **Ruby**   | Lento, ecosistema complejo, tipado blando. Complejo de testear.                             |
 
 </div>
 
@@ -60,6 +64,8 @@ Creado por **Google** en 2009
 #### Go soluciona todos los problemas
 
 ---
+
+<img src="assets/images/langs/go.svg" style="max-width: 128px;">
 
 ## Go al rescate
 
@@ -91,6 +97,7 @@ Creado por **Google** en 2009
 ---
 
 ## Sección 2
+
 # Características Fundamentales
 
 ---
@@ -124,7 +131,7 @@ javac MyApp.java     # ~10 segundos
 
 ### Arranque rápido
 
-🐢 Algunos servidores desarrollados en Java pueden tardar minutos en arrancar.
+> 🐢 Algunos servidores desarrollados en Java pueden tardar minutos en arrancar.
 
 ---
 
@@ -140,8 +147,8 @@ for i := 0; i < 10000; i++ {
 }
 ```
 
-- **Go:** 1000s goroutines en un sólo hilo
-- **Java:** 1 hilo por rutina con todo el overhead.
+> **Go:** 1000s goroutines en un sólo hilo.
+> **Java:** 1 hilo por rutina con todo el overhead.
 
 ---
 

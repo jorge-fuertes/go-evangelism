@@ -1,9 +1,17 @@
 .reveal blockquote {
-    font-style: normal;
-    padding: 0.05em .7em;
-    border-radius: 0.3em;
+  font-style: normal;
+  padding: 0.05em 0.7em;
+  border-radius: 0.3em;
 }
 
 .reveal blockquote > p {
-    font-style: normal;
+  font-style: normal;
+  font-size: 0.8em;
+}
+
+.lang img {
+  max-width: 1em;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
 }
