@@ -94,6 +94,8 @@ Creado por **Google** en 2009
 | Prometheus, Grafana         | Monitoreo        |
 | Go-Ethereum, CosmoSDK, btcd | Blockchain       |
 
+<img src="assets/images/stickers/conveyor.png" style="max-width: 256px;">
+
 ---
 
 ## Sección 2
@@ -116,7 +118,7 @@ var invalid string = 123
 
 ---
 
-## Compilación Rápida
+## <img src="assets/images/stickers/car.png"> Compilación Rápida
 
 ```bash
 # Go
@@ -129,7 +131,7 @@ g++ myapp.cpp        # ~30 segundos
 javac MyApp.java     # ~10 segundos
 ```
 
-### Arranque rápido
+### <img src="assets/images/stickers/car.png"> Arranque rápido
 
 > 🐢 Algunos servidores desarrollados en Java pueden tardar minutos en arrancar.
 
@@ -152,7 +154,7 @@ for i := 0; i < 10000; i++ {
 
 ---
 
-## Gestión de Memoria
+## <img src="assets/images/stickers/ram.png"> Gestión de Memoria
 
 ```go
 type User struct {
@@ -166,7 +168,7 @@ user := &User{"Alice", 30}
 
 ---
 
-## Manejo de Errores
+## <img src="assets/images/stickers/warning.png"> Manejo de Errores
 
 ```go
 file, err := os.Open("data.txt")
@@ -250,22 +252,41 @@ Cero configuración
 
 ---
 
+## 🛠️ Otras herramientas
+
+```go
+// go.mod
+
+tool (
+    github.com/daixiang0/gci // imports
+    github.com/golangci/golangci-lint/v2/cmd/golangci-lint
+    github.com/jorgefuertes/executor
+    github.com/segmentio/golines
+    github.com/swaggo/swag/cmd/swag // API documentation
+    github.com/vektra/mockery/v2 // testing mocks
+    honnef.co/go/tools/cmd/staticcheck
+    mvdan.cc/gofumpt
+)
+```
+
+---
+
 ## Sección 4
 
 ## Go vs Lenguajes Interpretados
 
 ---
 
-## Impacto en Costos
+## Impacto en Costes
 
-Servir 1M requests/día:
+Servir un millón de requests/día:
 
-**Python:**
+#### <img src="assets/images/langs/python.png"> Python
 
 - $10,000/mes
 - 20+ instancias
 
-**Go:**
+#### <img src="assets/images/langs/go.svg"> Go
 
 - $500/mes
 - 1-2 instancias
@@ -276,7 +297,7 @@ Ahorro: 95%
 
 ## Tipado: Compilación vs Runtime
 
-Python (error en ejecución):
+<p><img src="assets/images/langs/python.png"> <strong>Python (error en ejecución):</strong></p>
 
 ```python
 def add(a, b):
@@ -285,7 +306,7 @@ def add(a, b):
 result = add("10.5", 5)  # Error aquí
 ```
 
-Go (error en edición y en compilación):
+<p><img src="assets/images/langs/go.svg"> <strong>Go (error en edición y en compilación):</strong></p>
 
 ```go
 func Add(a float64, b float64) float64 {
@@ -299,7 +320,7 @@ result := Add("10.5", 5)  // Error detectado
 
 ## Escalabilidad
 
-**Python/Node.js:**
+<p><img src="assets/images/langs/python.png"> <strong>Python</strong> / <img src="assets/images/langs/js.png"> <strong>NodeJS:</strong></p>
 
 ```plain
 # Necesita load balancer
@@ -307,7 +328,7 @@ result := Add("10.5", 5)  // Error detectado
 16 cores  → 16 procesos
 ```
 
-**Go:**
+<p><img src="assets/images/langs/go.svg"> <strong>Go:</strong></p>
 
 ```plain
 # Escalado automático
@@ -319,7 +340,7 @@ Goroutines → Espacio de usuario
 
 ## Deployment: Docker
 
-Python (800MB):
+<p><img src="assets/images/langs/python.png"> <strong>Python (800MB):</strong></p>
 
 ```dockerfile
 FROM python:3.11
@@ -328,7 +349,7 @@ COPY app /app
 ENTRYPOINT ["python", "app.py"]
 ```
 
-Go (12MB):
+<p><img src="assets/images/langs/go.svg"> <strong>Go (12MB):</strong></p>
 
 ```dockerfile
 FROM scratch
@@ -340,25 +361,25 @@ ENTRYPOINT ["/myapp"]
 
 ## Sección 5
 
-# Go vs Java
+<img src="assets/images/stickers/go_vs_java.png">
 
 ---
 
 ## Comparativa
 
-| Aspecto      | Go         | Java    |
-| ------------ | ---------- | ------- |
-| Sintaxis     | Simple     | Verbosa |
-| Compilación  | 1s         | 20s     |
-| Startup      | 100ms      | 1s+     |
-| Memoria      | 20MB       | 200MB   |
-| Concurrencia | Goroutines | Threads |
+| Aspecto      | <p><img src="assets/images/langs/go.svg"> Go</p> | <p><img src="assets/images/langs/java.png"> Java</p> |
+| ------------ | ------------------------------------------------ | ---------------------------------------------------- |
+| Sintaxis     | Simple                                           | Verbosa                                              |
+| Compilación  | 1s                                               | 20s                                                  |
+| Startup      | 100ms                                            | 1s+                                                  |
+| Memoria      | 20MB                                             | 200MB                                                |
+| Concurrencia | Goroutines                                       | Threads                                              |
 
 ---
 
 ## Reducción de Código
 
-Java (25+ líneas):
+<p><img src="assets/images/langs/java.png"> <strong>Java (25+ líneas):</strong></p>
 
 ```java
 public class User {
@@ -375,7 +396,7 @@ public class User {
 }
 ```
 
-Go (3 líneas):
+<p><img src="assets/images/langs/go.svg"> <strong>Go (3 líneas):</strong></p>
 
 ```go
 type User struct {
@@ -388,7 +409,7 @@ type User struct {
 
 ## Concurrencia
 
-Java:
+<p><img src="assets/images/langs/java.png"> <strong>Java</strong></p>
 
 ```java
 ExecutorService executor =
@@ -398,7 +419,7 @@ for (int i = 0; i < 1000; i++) {
 }
 ```
 
-Go:
+<p><img src="assets/images/langs/go.svg"> <strong>Go</strong></p>
 
 ```go
 for i := 0; i < 1000; i++ {
@@ -412,10 +433,10 @@ for i := 0; i < 1000; i++ {
 
 ### Crear 10,000 workers
 
-| Lenguage | Footprint.     |
-| -------- | -------------- |
-| Go       | 100ms, +50MB   |
-| Java     | 2000ms, +500MB |
+| Lenguage                                            | Footprint.     |
+| --------------------------------------------------- | -------------- |
+| <p><img src="assets/images/langs/go.svg">Go</p>     | 100ms, +50MB   |
+| <p><img src="assets/images/langs/java.png">Java</p> | 2000ms, +500MB |
 
 > 🚅 Go escala 10x mejor
 
@@ -449,7 +470,7 @@ func main() {
 
 ---
 
-## API REST con Fiber
+## <img src="assets/images/langs/fiber.svg"> API REST con GoFiber
 
 ```go
 package main
@@ -631,33 +652,27 @@ spec:
 
 ## La Fórmula de Go
 
-```plain
-Simplicidad
-    +
-Rendimiento
-    +
-Escalabilidad
-    =
-El Mejor Lenguaje para Backend
-```
+<img src="assets/images/stickers/formula.png" style="max-width: 14em;">
 
 ---
 
 ## Por qué Go Gana
 
-1. **Simplicidad** - Más simple para sistemas distribuidos
-2. **Cloud** - Cloud-native por diseño
-3. **Costes** - Escala con menos recursos
-4. **Realimentación** - Compilación rápida
-5. **Comunidad** - Uber, Dropbox, Netflix
+|                    |                                       |
+| -----------------: | ------------------------------------- |
+|    **Simplicidad** | Más simple para sistemas distribuidos |
+|          **Cloud** | Cloud-native por diseño               |
+|         **Costes** | Escala con menos recursos             |
+| **Realimentación** | Compilación rápida                    |
+|      **Comunidad** | Uber, Dropbox, Netflix                |
 
 ---
 
 ## Recursos
 
 - **Oficiales:**
-  - tour.golang.org
-  - golang.org/doc
+  - [tour.golang.org](tour.golang.org)
+  - [golang.org/doc](golang.org/doc)
 
 - **Comunidad:**
   - GopherCon
@@ -666,10 +681,10 @@ El Mejor Lenguaje para Backend
 
 ---
 
-## Tu Roadmap
+## Hoja de ruta básica
 
 - **Semana 1:**
-  - tour.golang.org
+  - [tour.golang.org](tour.golang.org)
   - hello world
 - **Semana 2-3:**
   - API REST simple
@@ -688,4 +703,4 @@ if ready {
 }
 ```
 
-![Gopher](assets/images/gopher-tie.png)
+<img src="assets/images/gopher-tie.png" style="max-width: 10em;">
